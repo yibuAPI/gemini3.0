@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gemini3 AI模型 — 一步API专业AI接口平台</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      background-color: #5e35b1;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      color: #cfcfff;
+    }
+    .btn-primary {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #9575cd;
+      color: #121212;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #7e57c2;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 5px solid #9575cd;
+      padding-left: 12px;
+      margin-bottom: 20px;
+      font-size: 26px;
+      color: #d1c4e9;
+    }
+    section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+    ul {
+      color: #ccc;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li:before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #9575cd;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #2a2a2a;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Gemini3 AI模型 — 智能大模型专家</h1>
+  <p>一站式API中转服务，助力开发者与企业智能升级</p>
+  <a href="https://yibuapi.com" class="btn-primary" target="_blank" rel="noopener">立刻获取Gemini3 API密钥</a>
+</header>
+
+<div class="container">
+  <section>
+    <h2>关于Gemini3</h2>
+    <p>Gemini3作为领先的多模态大模型，融合了先进的语言理解与视觉处理能力，擅长完成多样且复杂的任务，涵盖文本对话、图像识别与生成，满足智能应用的多维需求。</p>
+    <p>凭借卓越的性能和广泛的适用场景，Gemini3为AI应用开发提供了坚实支撑，助您快速提升产品智能化水平，增强用户体验。</p>
+  </section>
+
+  <section>
+    <h2>为什么选择一步API的Gemini3服务？</h2>
+    <ul>
+      <li>高并发能力：支持大规模请求处理，确保服务流畅稳定</li>
+      <li>无缝兼容：完全匹配官方接口规范，减少集成成本</li>
+      <li>低延迟体验：极速响应时间，提升用户交互效率</li>
+      <li>灵活计费：多种付费模式，满足不同业务规模需求</li>
+      <li>专业支持：7×24小时技术响应，随时解决疑问与问题</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>使用指南</h2>
+    <p>访问 <a href="https://yibuapi.com" style="color:#9575cd;" target="_blank" rel="noopener">一步API官网</a>，注册账号并登录。</p>
+    <p>在控制台创建专属的Gemini3 API密钥，开启智能AI之旅。</p>
+    <p>通过简单的调用方式，无缝接入Gemini3强大能力，提升您的应用智能交互水平。</p>
+  </section>
+
+  <section>
+    <h2>示例代码（Node.js）</h2>
+    <pre style="background:#2c2c2c; padding:15px; border-radius:6px; overflow-x:auto; color:#9ccc65;">
+<code>
+const { Configuration, OpenAIApi } = require("openai");
+
+const configuration = new Configuration({
+  apiKey: "您的API密钥",
+  basePath: "https://yibuapi.com/v1",
+});
+
+const openai = new OpenAIApi(configuration);
+
+async function runGemini3() {
+  const response = await openai.createChatCompletion({
+    model: "gemini-3-pro",
+    messages: [
+      {role: "system", content: "您是专业的AI助手。"},
+      {role: "user", content: "帮我介绍一下Gemini3的优势。"},
+    ],
+  });
+  console.log(response.data.choices[0].message.content);
+}
+
+runGemini3();
+</code>
+    </pre>
+  </section>
+
+  <section>
+    <h2>常见问题解答</h2>
+    <p><strong>1. 一步API的Gemini3服务安全吗？</strong><br />
+       我们采用企业级加密技术确保所有数据传输安全，且不保存用户隐私信息，服务深受广大客户信赖。</p>
+    <p><strong>2. 怎样获得Gemini3 API密钥？</strong><br />
+       只需注册一步API账号，即刻创建专属API密钥，无需繁琐审核流程。</p>
+    <p><strong>3. 计费模式是怎样的？</strong><br />
+       支持灵活的预付费和按使用付费，费用透明合理，适合各种规模业务。</p>
+    <p><strong>4. 是否支持高并发请求？</strong><br />
+       我们后台采用分布式架构和智能负载均衡，轻松应对每秒数千次调用需求。</p>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 一步API中转站 版权所有
+</footer>
+</body>
+</html>
